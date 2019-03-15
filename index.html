@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html style="zoom: 1; background-attachment: fixed;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="renderer" content="webkit">
+	<link href="./CSS/common.css" rel="stylesheet">
+	<link href="./CSS/font-awesome.css" rel="stylesheet">
+	<title>Email from Maple Lane</title>
+	<link href="./CSS/login.css" rel="stylesheet">
+	<script>
+	function goMobile() {
+                if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                    window.location.href = "https://m.exmail.qq.com/cgi-bin/loginpage";
+                }
+            }
+    goMobile();
+    </script>
+<script charset="utf-8" src="chrome-extension://nfbikdkjfjcejddbdcpbafnclkfdhijd/js/btype.js"></script><script type="text/javascript" charset="utf-8" src="chrome-extension://nfbikdkjfjcejddbdcpbafnclkfdhijd/js/chrome.js"></script></head>
+<body style="">
+	<style type="text/css">.aero:before,.aero:after,.background{background-image:url(http://mail.maplelane.org/CSS/image1.jpg)}</style>	<div class="background"></div>
+	<div class="init-loading pop_fadeout" style="display: none;"><div><img src="./CSS/loading_simple.gif" draggable="false"></div></div>
+	<div class="loginbox animated-500 fadeInDown aero">
+		<div class="title">
+			<div class="logo">Email from Maple Lane</div>
+			<div class="info">邮箱系统</div>
+		</div>
+		<div class="form">
+			<form action="https://exmail.qq.com/cgi-bin/login" method="post" onsubmit="return checkInput()">
+				<input type="hidden" name="firstlogin" value="false">
+                <input type="hidden" name="errtemplate" value="dm_loginpage">
+                <input type="hidden" name="aliastype" value="other">
+                <input type="hidden" name="dmtype" value="bizmail">
+                <input type="hidden" name="p" value="">
+				<div class="inputs">
+					<div>
+						<i class="font-icon icon-user"></i>
+						<input type="text" name="uin" style="width: 120px; margin-left: 32px; margin-right: 5px;" placeholder="邮箱前缀">
+						<div style="display: inline-block;">@maplelane.org</div>
+						<input type="hidden" name="domain" class="text1" value="maplelane.org">
+					</div>
+					<div>
+						<i class="font-icon  icon-key"></i>
+						<input id="password" name="pwd" type="password" placeholder="邮箱密码">
+					</div>
+	            </div>
+				<div class="actions">
+					<br>
+					<input type="submit" id="submit" name="" value="登录">
+				</div>
+				<div class="msg"></div>
+							</form>
+		</div>
+	</div>
+
+		<div class="common-footer aero">
+	<span class="copyright-content">© 2019 Maple Lane | Powered by Tencent Exmail</span></div>
+	
+</body></html>
